@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'blade_runner/qunit_adapter/version'
+require 'blade/qunit_adapter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "blade_runner-qunit_adapter"
-  spec.version       = BladeRunner::QunitAdapter::VERSION
+  spec.name          = "blade-qunit_adapter"
+  spec.version       = Blade::QunitAdapter::VERSION
   spec.authors       = ["Javan Makhmali"]
   spec.email         = ["javan@javan.us"]
 
-  spec.summary       = %q{Blade Runner adapter for the QUnit JavaScript testing framework}
-  spec.homepage      = "https://github.com/javan/blade_runner-qunit_adapter"
+  spec.summary       = %q{Blade adapter for the QUnit JavaScript testing framework}
+  spec.homepage      = "https://github.com/javan/blade-qunit_adapter"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

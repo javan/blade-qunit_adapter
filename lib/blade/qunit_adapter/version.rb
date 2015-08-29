@@ -1,4 +1,4 @@
-module BladeRunner
+module Blade
   module QunitAdapter
     VERSION = "0.1.0"
   end

@@ -1,1 +1,1 @@
-[Blade Runner](https://github.com/javan/blade_runner) adapter for the [QUnit testing framework](https://qunitjs.com/)
+[Blade](https://github.com/javan/blade) adapter for the [QUnit testing framework](https://qunitjs.com/)

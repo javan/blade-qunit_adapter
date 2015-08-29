@@ -4,7 +4,7 @@ QUnit.config.hidepassed = true
 QUnit.config.testTimeout = 5000
 
 QUnit.begin (suiteDetails) ->
-  BladeRunner.suiteBegin(total: suiteDetails.totalTests)
+  Blade.suiteBegin(total: suiteDetails.totalTests)
 
 failedAssertions = []
 
@@ -19,11 +19,11 @@ QUnit.testDone (testDetails) ->
   name = "#{testDetails.module}: #{testDetails.name}"
   pass = testDetails.failed is 0
   message = formatAssertions(failedAssertions)
-  BladeRunner.testResult({name, pass, message})
+  Blade.testResult({name, pass, message})
 
 QUnit.done (suiteDetails) ->
   window.global_test_results = suiteDetails
-  BladeRunner.suiteEnd(suiteDetails)
+  Blade.suiteEnd(suiteDetails)
 
 formatAssertions = (assertions = []) ->
   if assertions.length
