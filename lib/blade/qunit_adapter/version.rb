@@ -1,5 +1,5 @@
 module Blade
   module QunitAdapter
-    VERSION = "0.4.0"
+    VERSION = "1.20.0"
   end
 end
